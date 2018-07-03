@@ -112,28 +112,3 @@ Promise.all([readLocalIdexDatabase, readMarketsFromApi]).then(values => {
         }
     });
 });
-
-/*
-    query = `INSERT INTO Products
-                        (name, url, price, normalPrice)
-                        VALUES (
-                            '${productName}', '${productUrl}', '${currentPrice}', '${normalPrice}'
-                        )`;
-
-                query = `UPDATE Products SET name = '${productName}', price = '${currentPrice}', normalPrice = '${normalPrice}'
-                        WHERE url = '${productUrl}'
-                        `;
-            }
-
-            if (query === '') return;
-
-            db.serialize(function() {
-                let stmt = db.prepare(query);
-                stmt.run();
-                stmt.finalize();
-            });
-            
-        });
-
-    });
-        */
