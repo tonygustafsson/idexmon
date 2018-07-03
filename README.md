@@ -1,5 +1,15 @@
 # IDEXMon
 
-Monitoring IDEX through their API
+Monitoring new coins that is added to IDEX.
+Using SQLLite to remember old coins.
 
-More info to come.
+## How?
+
+```
+npm install
+npm start
+```
+
+Then check in idex-changes.txt
+
+You could create a scheduled task / cron job for this.
